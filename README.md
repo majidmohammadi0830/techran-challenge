@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Demo
+[![Edit techran-challenge](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/techran-challenge-uwrnp?fontsize=14&hidenavigation=1&theme=dark)
+
 ## Available Scripts
 
 In the project directory, you can run:
