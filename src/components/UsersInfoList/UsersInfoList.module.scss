@@ -1,0 +1,35 @@
+@import "../../assets/styles/shared/utility.scss";
+.Content {
+    width: 75%;
+    height: 500px;
+}
+
+.ColumnHeader {
+    background-color: $teal-900;
+    color: $white;
+}
+
+.DataRow:nth-child(even) {
+    background-color: $grey-400 !important;
+}
+.DataRow:nth-child(odd) {
+    background-color: $grey-300 !important;
+}
+
+.ButtonGroup {
+    @include displayFlex();
+    @include flexJustifyContent(space-evenly);
+    width: 100%;
+}
+
+.EditButton {
+    background-color: $yellow !important;
+}
+
+.ViewButton {
+    background-color: $green !important;
+}
+
+.DeleteButton {
+    background-color: $red !important;
+}

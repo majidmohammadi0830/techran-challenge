@@ -1,0 +1,16 @@
+@import "../../fonts/BYekan/styles.scss";
+@import "../../fonts/Mohave/styles.scss";
+@import "../../fonts/MochiyPopOne/styles.scss";
+@import '../shared/utility.scss';
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient($teal-300,$teal-50) no-repeat center center fixed;
+}
+
+* {
+    font-family: "Mochiy Pop P One" !important;
+    font-size: 16px;
+}

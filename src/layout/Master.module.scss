@@ -1,0 +1,9 @@
+@import '../assets/styles/shared/utility.scss';
+
+.Content {
+    @include displayFlex(column);
+    @include flexAlignItems(center);
+    height: 100%;
+    padding:$l-padding;
+
+}

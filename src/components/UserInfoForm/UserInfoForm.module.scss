@@ -1,0 +1,51 @@
+@import "../../../src/assets/styles/shared/utility.scss";
+
+.Content {
+    @include displayFlex(column);
+    @include flexAlignItems(center);
+    @include lightBorderRadius();
+    border: 1px solid $teal-900;
+    background-color: $white;
+    box-shadow: 1px 0px 20px 5px $teal-200;
+    margin: $l-margin * 5 0 $l-margin * 5 0;
+    padding: $l-padding * 5 $l-padding * 3 $l-padding $l-padding * 3 ;
+}
+
+.FormIcon {
+    @include circleBorderRadius();
+    background-color: $teal-900;
+    color:$white;
+    font-size: 50px !important;
+    position: absolute;
+    top: 35px;
+}
+
+.FormControl {
+    margin: 0 $l-margin 3 * $l-margin $l-margin !important;
+}
+
+.ButtonGroup {
+    @include displayFlex(row);
+    @include flexAlignItems(center);
+    @include flexJustifyContent(space-evenly);
+    margin: $l-margin 0 $l-margin 0;
+    width: 100%;
+}
+
+.SubmitButton {
+    background-color: $teal-900 !important;
+    color: $white !important;
+    &:hover {
+        background-color: $teal-100 !important;
+        color: $blueGrey-900 !important;
+    }
+}
+
+.CancelButton {
+    background-color: $red !important;
+    color: $white !important;
+    &:hover {
+        background-color: $red-100 !important;
+        color: $blueGrey-900 !important;
+    }
+}

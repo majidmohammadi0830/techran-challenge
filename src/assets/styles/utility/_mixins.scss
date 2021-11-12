@@ -1,0 +1,37 @@
+//display-flex
+@mixin displayFlex($flex-direction: row) {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-direction: $flex-direction;
+}
+
+@mixin flexJustifyContent($justify-content) {
+    justify-content: $justify-content;
+}
+
+@mixin flexAlignItems($align-items) {
+    align-items: $align-items;
+}
+
+//box-shadow
+@mixin boxShadow($h, $v, $blur, $spread, $color) {
+    -webkit-box-shadow: $h $v $blur $spread $color; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: $h $v $blur $spread $color; /* Firefox 3.5 - 3.6 */
+    box-shadow: $h $v $blur $spread $color; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+@mixin lightBoxShadow($color) {
+    @include boxShadow(1px, ​5px, 20px, 10px, $color);
+}
+
+//border-radius
+@mixin lightBorderRadius() {
+    border-radius: 5px;
+}
+
+@mixin circleBorderRadius() {
+    border-radius: 50px;
+}
